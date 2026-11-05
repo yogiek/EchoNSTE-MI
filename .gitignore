@@ -1,0 +1,17 @@
+# Dataset and outputs (never commit patient data or large files)
+EchoNSTE-MI/
+results/
+test_run/
+inspect/
+*.mp4
+*.pt
+*.pth
+*.log
+*_rename_map.csv
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/

@@ -2,8 +2,8 @@
 # Train and evaluate both baselines on all three views, then summarise.
 set -eo pipefail
 cd "$(dirname "$0")"          # run from the code folder
-DATA=${DATA:-/root/folder-docker/echo/EchoNSTE-MI}
-OUT=${OUT:-/root/folder-docker/echo/results}
+DATA=${DATA:-/root/folder-docker/EchoNSTE-MI}
+OUT=${OUT:-/root/folder-docker/results}
 WORKERS=${WORKERS:-4}
 EPOCHS=${EPOCHS:-30}
 mkdir -p "$OUT"
