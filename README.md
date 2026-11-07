@@ -33,11 +33,11 @@ EchoNSTE-MI/
 │   ├── NSTEMI/   P001_2CH.mp4 ... P311_2CH.mp4
 │   └── UAP/      P312_2CH.mp4 ... P720_2CH.mp4
 ├── 4CH/
-│   ├── NSTEMI/   P001_4CH.mp4 ...
-│   └── UAP/      P312_4CH.mp4 ...
+│   ├── NSTEMI/   P001_4CH.mp4 ... P311_4CH.mp4
+│   └── UAP/      P312_4CH.mp4 ... P720_4CH.mp4
 └── PLAX/
-    ├── NSTEMI/   P001_PLAX.mp4 ...
-    └── UAP/      P312_PLAX.mp4 ...
+    ├── NSTEMI/   P001_PLAX.mp4 ... P311_PLAX.mp4
+    └── UAP/      P312_PLAX.mp4 ... P720_PLAX.mp4
 ```
 
 The patient identifier (`P001`–`P720`) is unique across the dataset and shared by the three views of the same
@@ -161,12 +161,12 @@ Test-set performance (n = 108 patients per view). AUC is reported with its boots
 
 | View | Model | AUC (95% CI) | Accuracy | Precision | Sensitivity | Specificity | F1-score |
 |---|---|---|---|---|---|---|---|
-| 2CH | ResNet-18 (2D CNN) | – | – | – | – | – | – |
-| 2CH | R(2+1)D-18 (3D CNN) | – | – | – | – | – | – |
-| 4CH | ResNet-18 (2D CNN) | – | – | – | – | – | – |
-| 4CH | R(2+1)D-18 (3D CNN) | – | – | – | – | – | – |
-| PLAX | ResNet-18 (2D CNN) | – | – | – | – | – | – |
-| PLAX | R(2+1)D-18 (3D CNN) | – | – | – | – | – | – |
+| 2CH | ResNet-18 (2D CNN) | 0.576 | 0.537 | 0.500 | 0.460 | 0.603 | 0.479 |
+| 2CH | R(2+1)D-18 (3D CNN) | 0.665 | 0.611 | 0.618 | 0.420 | 0.776 | 0.500 |
+| 4CH | ResNet-18 (2D CNN) | 0.713 | 0.602 | 0.585 | 0.480– | 0.707 | 0.527 |
+| 4CH | R(2+1)D-18 (3D CNN) | 0.697 | 0.667 | 0.719 | 0.460 | 0.845 | 0.561 |
+| PLAX | ResNet-18 (2D CNN) | 0.621 | 0.574 | 0.543 | 0.500 | 0.638 | 0.521 |
+| PLAX | R(2+1)D-18 (3D CNN) | 0.650 | 0.657 | 0.659 | 0.540 | 0.759 | 0.593 |
 
 The test subset is small, so differences between models of a few AUC points fall within the confidence
 intervals. These results are reference baselines, not optimised models.
@@ -190,12 +190,14 @@ If you use the dataset or this code, please cite:
 }
 
 @misc{echonste_mi_data_2026,
-  author    = {Kurniawan, Yogiek Indra},
+  author    = {Kurniawan, Yogiek Indra and Fadhlillah, Maulana Kholis and Mantau, Aprinaldi Jasa and
+             Tandayu, Kevin Moses Hanky Jr and Sukmawan, Renan and Liastuti, Lies Dina and
+             Pratama, Mahardhika and Jatmiko, Wisnu},
   title     = {EchoNSTE-MI},
   year      = {2026},
   publisher = {Mendeley Data},
-  version   = {1},
-  doi       = {10.17632/y6z64ntstg.1}
+  version   = {2},
+  doi       = {10.17632/y6z64ntstg.2}
 }
 ```
 
