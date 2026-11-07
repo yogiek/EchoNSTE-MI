@@ -7,7 +7,7 @@ patients with non-ST-elevation acute coronary syndrome (NSTE-ACS).
 This repository contains the scripts used to check the dataset and to train and evaluate the baseline models
 reported in the Data in Brief article (technical validation).
 
-- **Dataset (Mendeley Data):** https://data.mendeley.com/datasets/y6z64ntstg/1 (doi:[10.17632/y6z64ntstg.1](https://doi.org/10.17632/y6z64ntstg.1))
+- **Dataset (Mendeley Data):** https://data.mendeley.com/datasets/y6z64ntstg/2 (doi:[10.17632/y6z64ntstg.2](https://doi.org/10.17632/y6z64ntstg.2))
 - **Article:** *EchoNSTE-MI: A multi-view echocardiography video dataset for myocardial infarction classification
   in patients with non-ST-elevation acute coronary syndrome*, Data in Brief (under review)
 
